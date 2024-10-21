@@ -1,0 +1,138 @@
+@media (min-width: 440px) {
+    .body__call_back_popup_form_body {
+
+        .body__call_back_popup_button_close {
+            display: none;
+        }
+    }  
+}
+
+.body__call_back_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 11;
+
+    .body__call_back_popup_blur {
+        display: inline-block;
+        width: calc(100% - 440px);
+
+        div {
+            position: relative;
+            left: calc(100% - 60px);
+            top: 20px;
+        }
+    }
+
+    .body__call_back_popup_form_body {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 440px;
+        padding-top: 20px;
+        background-color: white;
+        box-shadow: -10px 0px 20px 0px grey;
+
+        .body__call_back_popup_button_close {
+            position: relative;
+            left: 3vw;
+        }
+    }
+}
+
+.body__call_back_popup_button_close {
+    width: 40px;
+    height: 40px;
+    background-color: $pink;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: white;
+        border: 1px solid $pink;
+
+        svg {
+            stroke: $pink;
+        }
+    }
+}
+
+.body__call_back_popup_form_title {
+    padding: 3vh 0;
+
+    h1 {
+        border-left: 4px solid $blue;
+        padding-left: 3vw;
+    }
+}
+
+.body__call_back_popup_form {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0vh 3vw;
+
+    input {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 2vh;
+        border: 1px solid $grey;
+    }
+
+    textarea {
+        margin-bottom: 2vh;
+        border: 1px solid $grey;
+    }
+
+    .body__call_back_popup_form_button {
+        background-color: $pink;
+        border: 0;
+        border-radius: 10%/50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        width: 50%;
+        height: 35px;
+        color: white;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: white;
+            border: 2px solid $pink;
+            color: $pink;
+
+            svg {
+                stroke: $pink;
+            }
+        }
+
+        h4 {
+            margin-right: 10px;
+        }
+    }
+}
+
+.body__call_back_popup_form_textbox {
+    color: $darkgrey;
+    font-size: 0.8rem;
+    margin-bottom: 2vh;
+
+    a {
+        cursor: pointer;
+        color: $pink;
+
+        &:hover {
+            border-bottom: 0.5px solid $pink;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "~normalize.css";
+@import "font.scss";
+@import "variables.scss";
+@import "containerstyle.scss";
+@import "liststyle.scss";
+@import "footer.scss";
+@import "menustyle.scss";
+@import "popupcallback.scss";
+@import "popupcallorder.scss";
+@import "swiperstyle.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Lakes';
+}
+
+h1 {
+    font-family: 'TT Lakes Bold';
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1.05em;
+    font-family: 'TT Lakes';
+}
+
+a {
+    text-decoration: none;
+    color: #7E7E82;
+    font-size: 1.1em;
+    font-family: 'TT Lakes';
+}

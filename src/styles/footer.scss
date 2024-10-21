@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .body__footerbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 3vh 3vw 1vh 3vw;
+
+        div {
+            font-size: 0.7rem;
+            color: $darkgrey;
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .body__footerbox {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 3vh 3vw;
+
+        div {
+            font-size: 0.7rem;
+            color: $darkgrey;
+        }
+
+        .body__footerbox_right {
+            text-align: end;
+        }
+    }
+}

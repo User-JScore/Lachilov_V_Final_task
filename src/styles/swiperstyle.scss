@@ -1,0 +1,166 @@
+@media (max-width: 767px) {
+    .body__brandbox_swiper {
+        border-bottom: 1px solid $blue;
+
+        .body__brandbox_swiper_title {
+            padding: 20px 10px;
+            background-color: white;
+            
+            h3{
+                font-weight: 100;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .body__brandbox_swiperbox {
+        max-width: 100vw;
+        padding: 3vh 3vw;
+    }
+
+    .body__brandbox_swiperlist {
+
+        margin-bottom: 2vh;
+
+        .body__brandbox_itembox {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+            height: 70px;
+            border: $border;
+            border-radius: 3%/5%;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #EAEAEA;
+
+                .body__brandbox_itembutton {
+                    background-color: $pink;
+
+                    svg {
+                        stroke: white;
+                        fill: white;
+                    }
+                }
+            }
+
+            img {
+                display: inline-block;
+                width: 130px;
+            }
+
+            .body__brandbox_itembutton {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $pink;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        --swiper-theme-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .body__servicebox_itembox {
+        height: 160px !important;
+        flex-direction: column;
+
+        h4 {
+            position: relative;
+            right: 15px;
+        }
+
+        div {
+            position: relative;
+            left: 65px;
+        }
+    }
+
+    .body__pricebox_itembox{
+        flex-direction: column;
+        height: 160px !important;
+        position: relative;
+
+        &:hover {
+            .body__pricebox_itembutton {
+                border: 1px solid $pink;
+                background-color: white;
+
+                h4 {
+                    color: $pink;
+                }
+
+                svg {
+                    stroke: $pink;
+                }
+            }
+        }
+
+        .body__pricebox_itembox_infobox{
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .body__pricebox_itembox_label {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .body__pricebox_itembutton {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 40%;
+            height: 30px;
+            background-color: $pink;
+            border-radius: 18%/50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h4 {
+                color: white;
+                font-size: 0.8rem;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .body__pricebox_textbox_swiper {
+        font-size: 0.8rem;
+
+        p {
+            padding: 3vh 3vw;
+        }
+
+        .body__pricebox_textbox_button_swiper {
+            display: flex;
+            align-items: center;
+            padding: 0 0 3vh 3vw;
+            cursor: pointer;
+
+            &:hover {
+                h4 {
+                    border-bottom: 1px solid $blue;
+                }
+            }
+
+            h4 {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .body__brandbox_swiper {
+        display: none;
+    }
+}

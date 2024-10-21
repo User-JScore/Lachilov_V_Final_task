@@ -1,0 +1,300 @@
+@media (max-width: 767px) {
+    .body__brandbox,
+    .body__pricebox,
+    .body__servicebox {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+
+    .body__brandbox {
+        border-bottom: 1px solid $blue;
+    
+        .body__brandbox_titlebox {
+            background-color: white;
+            padding: 3vh 3vw;
+            margin-bottom: 10px;
+    
+            h3 {
+                font-weight: 100;
+                font-size: 1rem;
+            }
+        }
+    
+        .body__brandbox_listbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 1vh 3vw;
+            height: 160px;
+            overflow: hidden;
+    
+            .body__brandbox_itembox {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 240px;
+                width: 30vw;
+                min-width: 200px;
+                height: 70px;
+                background-color: white;
+                border: $border;
+                border-radius: 3%/5%;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: $grey;
+    
+                    div {
+                        background-color: $pink;
+    
+                        svg {
+                            stroke: white;
+                        }
+                    }
+                }
+    
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $pink;
+                    border-radius: 50%;
+                }
+    
+                img {
+                    width: 130px;
+                }
+            }
+        }
+    
+        .body__brandbox_readmorebox {
+            display: flex;
+            align-items: center;
+            margin: 3vh 3vw;
+    
+            &:hover {
+                color: $pink;
+            }
+    
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .body__servicebox {
+        border-bottom: 1px solid $blue;
+    
+        .body__servicebox_titlebox {
+            background-color: white;
+            padding: 3vh 3vw;
+            margin-bottom: 10px;
+    
+            h3 {
+                font-weight: 100;
+                font-size: 1rem;
+            }
+        }
+    
+        .body__servicebox_listbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 1vh 3vw;
+            height: 180px;
+            overflow: hidden;
+    
+            .body__servicebox_itembox {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 240px;
+                width: 30vw;
+                min-width: 200px;
+                height: 160px;
+                background-color: white;
+                border: $border;
+                border-radius: 3%/5%;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: $grey;
+    
+                    div {
+                        background-color: $pink;
+    
+                        svg {
+                            stroke: white;
+                        }
+                    }
+                }
+    
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $pink;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 10px;
+                }
+    
+                h4 {
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                }
+    
+            }
+        }
+    
+        .body__servicebox_readmorebox {
+            display: flex;
+            align-items: center;
+            margin: 3vh 3vw;
+    
+            &:hover {
+                color: $pink;
+            }
+    
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .body__pricebox {
+        border-bottom: 1px solid $blue;
+    
+        .body__pricebox_titlebox {
+            background-color: white;
+            padding: 3vh 3vw;
+            margin-bottom: 10px;
+    
+            h3 {
+                font-weight: 100;
+                font-size: 1rem;
+            }
+        }
+    
+        .body__pricebox_listbox {
+            padding: 1vh 3vw;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3vh;
+    
+            .body__pricebox_itembox {
+                display: inline-flex;
+                justify-content: start;
+                align-items: center;
+                height: 65px;
+                padding: 10px;
+                font-size: 0.8rem;
+    
+                .body__pricebox_item_name {
+                    width: 54%;
+                }
+    
+                .body__pricebox_item_price {
+                    width: 15%;
+                }
+    
+                .body__pricebox_item_time {
+                    width: 15%;
+                }
+    
+                .body__pricebox_item_button {
+                    display: inline-flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: $pink;
+                    border-radius: 15%/50%;
+                    width: 15%;
+                    min-width: 140px;
+                    max-width: 170px;
+                    height: 80%;
+    
+                    h4 {
+                        color: white;
+                    }
+                }
+            }
+    
+            .body__pricebox_itembox__item {
+                background-color: white;
+    
+                .body__pricebox_item_button {
+                    cursor: pointer;
+                    transition: all 0.3s;
+    
+                    &:hover {
+                        background-color: white;
+                        box-sizing: border-box;
+                        border: 2px solid $pink;
+    
+                        h4{
+                            color: $pink;
+                        }
+    
+                        svg {
+                            stroke: $pink;
+                        }
+                    }
+                }
+            }
+    
+            .body__pricebox_itembox__title {
+    
+                .body__pricebox_item_button {
+                    background-color: transparent;
+                }
+            }
+    
+            hr {
+                width: 98%;
+                margin: 0 auto; 
+            }
+        }
+    
+        .body__pricebox_textbox {
+            margin: 3vh 3vw;
+            width: 100%;
+            max-width: 500px;
+
+            p {
+                font-size: 0.8rem;
+                color: $darkgrey;
+            }
+    
+            div {
+                margin-top: 2vh;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                cursor: pointer;
+                transition: all 0.3s;
+            
+                &:hover {
+                    h4 {
+                        border-bottom: 1px solid $blue;
+                    }
+                }
+    
+                h4 {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
